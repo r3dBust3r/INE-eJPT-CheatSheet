@@ -122,7 +122,7 @@ run
 ls -l /usr/share/nmap/scripts | grep smb
 nmap --script smb-os-discovery.nse -p 445 <target>
 nmblookup -A <target>
-smbclient -L .//<target> -N
+smbclient -L //<target> -N
 rpcclient -U "" -N <target>
 
 # ---
