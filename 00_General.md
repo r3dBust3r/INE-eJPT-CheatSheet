@@ -285,6 +285,91 @@ certutil -urlcache -split -f "https://example.com/file.zip" file.zip
 wget https://example.com/file.zip
 ```
 
+## Metasploit Service Auxiliaries
+```bash
+# FTP (Port 21)
+auxiliary/scanner/ftp/ftp_version
+auxiliary/scanner/ftp/ftp_login
+auxiliary/scanner/ftp/anonymous
+auxiliary/scanner/ftp/ftp_enumusers
+
+# ---
+
+# SSH (Port 22)
+auxiliary/scanner/ssh/ssh_version
+auxiliary/scanner/ssh/ssh_login
+auxiliary/scanner/ssh/ssh_enumusers
+
+# ---
+
+# MySQL (Port 3306)
+auxiliary/scanner/mysql/mysql_version
+auxiliary/scanner/mysql/mysql_login
+auxiliary/scanner/mysql/mysql_enum
+auxiliary/scanner/mysql/mysql_hashdump
+
+# ---
+
+# PostgreSQL (Port 5432)
+auxiliary/scanner/postgres/postgres_version
+auxiliary/scanner/postgres/postgres_login
+auxiliary/scanner/postgres/postgres_enum
+
+# ---
+
+# HTTP/HTTPS (Ports 80, 443)
+auxiliary/scanner/http/http_version
+auxiliary/scanner/http/http_title
+auxiliary/scanner/http/http_header
+auxiliary/scanner/http/robots_txt
+auxiliary/scanner/http/dir_scanner
+
+# ---
+
+# SMTP (Port 25)
+auxiliary/scanner/smtp/smtp_version
+auxiliary/scanner/smtp/smtp_enum
+auxiliary/scanner/smtp/smtp_relay
+
+# ---
+
+# SMB (Ports 139, 445)
+auxiliary/scanner/smb/smb_version
+auxiliary/scanner/smb/smb_enumusers
+auxiliary/scanner/smb/smb_enumshares
+auxiliary/scanner/smb/smb_enumgroups
+
+# ---
+
+# SNMP (Port 161)
+auxiliary/scanner/snmp/snmp_login
+auxiliary/scanner/snmp/snmp_enum
+auxiliary/scanner/snmp/snmp_enumusers
+
+# ---
+
+# RDP (Port 3389)
+auxiliary/scanner/rdp/rdp_scanner
+auxiliary/scanner/rdp/rdp_version
+auxiliary/scanner/rdp/rdp_ntlm_info
+auxiliary/scanner/rdp/rdp_login
+
+# ---
+
+# WinRM (Ports 5985/5986)
+auxiliary/scanner/winrm/winrm_auth_methods
+auxiliary/scanner/winrm/winrm_login
+auxiliary/scanner/winrm/winrm_cmd
+
+# ---
+
+# Generic/Multi-Service Scanners
+auxiliary/scanner/portscan/tcp
+auxiliary/scanner/portscan/syn
+auxiliary/scanner/discovery/service_identification
+auxiliary/scanner/discovery/udp_probe
+```
+
 ## Meterpreter Commands
 ```bash
 # Core Session / Navigation
