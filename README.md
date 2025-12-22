@@ -1,6 +1,10 @@
 # INE-eJPT-CheatSheet
 A cheatsheet for your eJPT exam
 
+- [eJPT Exam CheckList](_eJPT_Exam_CheckList.md)
+
+---
+
 - [00 - General](00_General.md)
 - [01 - Information Gathering & Enumeration](01_Information_Gathering_and_Enumeration.md)
 - [02 - Exploitation](02_Exploitation.md)
