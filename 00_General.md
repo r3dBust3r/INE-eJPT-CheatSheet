@@ -310,6 +310,15 @@ auxiliary/scanner/mysql/mysql_hashdump
 
 # ---
 
+# MSSQL (Port 1433)
+auxiliary/scanner/mssql/mssql_login
+auxiliary/admin/mssql/mssql_enum
+auxiliary/admin/mssql/mssql_enum_sql_logins
+auxiliary/admin/mssql/mssql_exec
+auxiliary/admin/mssql/mssql_enum_domain_accounts
+
+# ---
+
 # PostgreSQL (Port 5432)
 auxiliary/scanner/postgres/postgres_version
 auxiliary/scanner/postgres/postgres_login
